@@ -69,14 +69,17 @@ public class Lab6 {
 
     public static void main(String[] args) {
         // Question 1
+        System.out.println("Qn1");
         LinkedList<Integer> newList = new LinkedList<Integer>(Arrays.asList(1,3,5,7,9,11));
         addAndSort(newList, 13);
 
         // Question 2
+        System.out.println("Qn2");
         newList = new LinkedList<Integer>(Arrays.asList(1,3,5,7,9,11));
         swapValues(newList,1, 5);
 
         // Question 3, generating 500 random int
+        System.out.println("Qn3");
         Random random = new Random();
         newList = new LinkedList<Integer>();
         for (int i = 0; i < 500; i++) newList.add(random.nextInt(1000,9999));
@@ -87,7 +90,7 @@ public class Lab6 {
             System.out.println("Found value at index: " + result + ".\n");
         }
 
-        System.out.println("Question 4");
+        System.out.println("Qn4");
         // Question 4
         HashMap hashmap = new HashMap();
         // initialise 1,3,5,7,9,11 array to hashmap
@@ -97,9 +100,11 @@ public class Lab6 {
         addAndSortHash(hashmap, 2);
 
         // Question 5
+        System.out.println("Qn4");
         swapValuesHash(hashmap, 1, 5);
 
         // Question 6
+        System.out.println("Qn4");
         hashmap = new HashMap();
         for (int i = 0; i < 500; i ++) hashmap.put(i, random.nextInt(1000,9999));
         result = findValueHash(hashmap, 2345);
